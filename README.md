@@ -1,4 +1,4 @@
-# Risk Score and Credit Approval Prediction Project
+# Risk Score and Credit Approval Prediction Project 💰
 
 This project focuses on building machine learning models to predict two key targets:
 - **RiskScore** (Regression problem)
@@ -6,7 +6,7 @@ This project focuses on building machine learning models to predict two key targ
 
 We have a dataset of **50,000 records**, and we will conduct an **Exploratory Data Analysis (EDA)**, followed by **preprocessing** steps to clean and prepare the data. Multiple machine learning models will be trained and evaluated for both regression and classification tasks to find the best-performing models.
 
-## Project Overview
+## Project Overview 📊
 
 ### Dataset
 The dataset contains **50,000 samples** with features related to financial behavior and other relevant information. The target variables are:
