@@ -14,7 +14,7 @@ def predict (input):
     @return a dataframe with three columns: ID, CreditoAprobado, ScoreRiesgo
     """
     
-    model_regresion = joblib.load('../../model/regerssion.pkl')
+    model_regresion = joblib.load('./GROUP1/model_regression.pkl')
 
     output = pd.DataFrame()
     output['Id'] = input['Id']
