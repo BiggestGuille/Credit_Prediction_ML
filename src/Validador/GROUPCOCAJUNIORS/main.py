@@ -2,6 +2,7 @@ import argparse
 import numpy as np
 import pandas as pd
 import sys
+import joblib
 
 def predict (input):
     """
@@ -12,11 +13,23 @@ def predict (input):
     @param input: the input dataframe.
     @return a dataframe with three columns: ID, CreditoAprobado, ScoreRiesgo
     """
-    np.random.seed(0)
+
+
+    # Load the models
+    model_regression = joblib.load('./GROUPCOCAJUNIORS/model_regression.pkl')
+    model_classification = joblib.load('./GROUPCOCAJUNIORS/model_classification.pkl')
+
     output = pd.DataFrame()
     output['Id'] = input['Id']
-    score = np.random.randint(0, 100, size=len(input))
-    approved = score < 50
+
+    # Drop the ID column and not used columns
+    input = input.drop('Id', axis=1)
+    input = input.drop(['IngresoBrutoAnual', 'Experiencia', 'TotalActivos'], axis=1)
+
+    # Predictions
+    score = model_regression.predict(input)
+    approved = model_classification.predict(input)
+
     output['CreditoAprobado'] = approved
     output['ScoreRiesgo'] = score
     return output
