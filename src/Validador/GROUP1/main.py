@@ -14,12 +14,17 @@ def predict (input):
     @return a dataframe with three columns: ID, CreditoAprobado, ScoreRiesgo
     """
     
-    model_regresion = joblib.load('../../model/regerssion.pkl')
+    # Load the models
+    model_regression = joblib.load('./GROUP1/model_regression.pkl')
+    model_classification = joblib.load('./GROUP1/model_classification.pkl')
 
     output = pd.DataFrame()
     output['Id'] = input['Id']
-    score = model_regresion.predict(input)
-    approved = score < 50
+
+    # Predictions
+    score = model_regression.predict(input)
+    approved = model_classification.predict(input)
+
     output['CreditoAprobado'] = approved
     output['ScoreRiesgo'] = score
     return output
