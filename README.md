@@ -4,7 +4,7 @@ This project focuses on building machine learning models to predict two key targ
 - **RiskScore** (Regression problem)
 - **CreditApproved** (Classification problem)
 
-We have a dataset of **50,000 records**, and we will conduct an **Exploratory Data Analysis (EDA)**, followed by **preprocessing** steps to clean and prepare the data. Multiple machine learning models will be trained and evaluated for both regression and classification tasks to find the best-performing models.
+With a dataset of **50,000 records**, we will conduct an **Exploratory Data Analysis (EDA)**, followed by **preprocessing** steps to clean and prepare the data. Then, multiple machine learning models will be trained and evaluated for both regression and classification tasks to find the best-performing models.
 
 ## Project Overview 📊
 
