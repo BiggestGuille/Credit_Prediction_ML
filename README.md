@@ -43,7 +43,8 @@ The dataset contains **50,000 samples** with features related to financial behav
      - Cross Validation with Randomized Search
      - 80-20 Train-Test Split 
 
-5. **Competition: Best Models**:
-   - After evaluation, the top-performing models for both tasks were selected to participate in a competition. In this competition, teams tested their machine learning solutions against one another to achieve the best performance in a new test dataset. Our group excelled, demonstrating exceptional understanding and application of machine learning techniques, and proudly secured the first place in the challenge. As a result of our performance, we were awarded the Highest Honors in the Machine Learning course.
+5. **Competition: Best Models**
+   - After evaluation, the top-performing models for both tasks were selected to participate in a competition. In this competition, teams tested their machine learning solutions against one another to achieve the best performance in a new test dataset. Our group excelled, demonstrating exceptional understanding and application of machine learning techniques, and proudly secured the first place in the challenge. As a result of our performance, we were awarded the **Highest Honors** in the Machine Learning course.
+![WhatsApp Image 2024-11-23 at 13 04 29](https://github.com/user-attachments/assets/98a7be05-5c9b-4711-907b-41545d19a72b)
 
 
