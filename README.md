@@ -19,25 +19,31 @@ The dataset contains **50,000 samples** with features related to financial behav
    - Perform necessary visualizations and summary statistics.
 2. **Preprocessing**:
    - Handle missing data, outliers, and categorical variables.
-   - Feature scaling and transformation where needed.
+   - Feature scaling or transformations.
 3. **Modeling**:
    - **Regression Models** for predicting `ScoreRiesgo`, including:
      - Linear Regression (and variants)
      - Random Forest Regressor
      - Gradient Boosting Regressor (HistGradientBoosting and XGBoost)
      - MLP Regressor
+     - Voting Regressor
+     - Bagging Regressor
    - **Classification Models** for predicting `CreditoAprobado`, including:
      - Logistic Regression (and variants)
      - Random Forest Classifier
-     - Boosting Classifier
+     - Boosting Classifier (HistGradientBoosting and XGBoost)
+     - Bagging Classifier
      - MLP Classifier
      - Voting Classifier
 4. **Model Evaluation**:
    - Performance metrics:
      - For regression: Mean Squared Error (MSE), R².
-     - For classification: Accuracy, Precision, Recall, F1-Score, ROC-AUC.
+     - For classification: Accuracy , ROC-AUC.
+   - Techniques used:
+     - Cross Validation with Randomized Search
+     - 80-20 Train-Test Split 
 
-5. **Best Models**:
-   - After evaluation, the top-performing models for both tasks will be selected.
+5. **Competition: Best Models**:
+   - After evaluation, the top-performing models for both tasks were selected to participate in a competition. In this competition, teams tested their machine learning solutions against one another to achieve the best performance in a new test dataset. Our group excelled, demonstrating exceptional understanding and application of machine learning techniques, and proudly secured the first place in the challenge. As a result of our performance, we were awarded the Highest Honors in the Machine Learning course.
 
 
